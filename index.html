@@ -10,65 +10,29 @@
 
 <body>
     <script>
-        //console.log('Hello World');
-        //const firstValue = prompt("First value");
-        //const operator = prompt("Operator");
-        //const secondValue = prompt("Second value");
+        const firstValue = prompt("First value");
+        const operator = prompt("Operator");
+        const secondValue = prompt("Second value");
 
-
-        //console.log(firstValue);
-        //console.log(operator);
-        //console.log(secondValue);
-        //console.log(typeof(firstValue))
-        //console.log(parseInt(firstValue))
-        //console.log(parseInt(firstValue) + parseInt(secondValue));
-
-        //if (operator === "+") {
-        //    console.log(parseInt(firstValue) + parseInt(secondValue));
-        //}
-
+        console.log(firstValue);
+        console.log(operator);
+        console.log(secondValue);
+        
         function getResult(firstValue, operator, secondValue) {
             switch (operator) {
                 case "+":
                     return parseInt(firstValue) + parseInt(secondValue);
-                    break;
                 case "-":
                     return parseInt(firstValue) - parseInt(secondValue);
-                    break;
                 case "/":
                     return parseInt(firstValue) / parseInt(secondValue);
-                    break;
                 case "*":
                     return parseInt(firstValue) * parseInt(secondValue);
-                    break;
                 default :
                     return "Invalid Operator";
             }
         }
-        //console.log(getResult(firstValue, operator, secondValue));
-
-
-        const userName = prompt('Give your name :');
-
-        if (userName) {
-            const random = Math.floor(Math.random() * 100) + 1;
-            let userNumber = prompt('Choose number between 1 & 100 :');
-            let start = 0;
-            while (parseInt(userNumber) !== random) {
-                if (userNumber < random) {
-                    console.log('It\'s more');
-                    userNumber = prompt('Choose number up to :' + userNumber);
-                }
-                if (userNumber > random) {
-                    console.log('It\'s less');
-                    userNumber = prompt('Choose number under to :' + userNumber);
-                }
-                if (parseInt(userNumber) === random) {
-                    alert('You win !')
-                }
-                start++;
-            }
-        }
+        console.log(getResult(firstValue, operator, secondValue));
     </script>
 </body>
 
