@@ -14,6 +14,5 @@ if (userName) {
         if (parseInt(userNumber) === random) {
             alert('You win !')
         }
-        start++;
     }
 }
